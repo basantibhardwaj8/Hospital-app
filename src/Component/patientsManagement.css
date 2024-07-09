@@ -1,0 +1,52 @@
+/* PatientManagement.css */
+
+.patient-management-container {
+    background-color:blue;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-management-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .patient-management-container input[type="text"],
+  .patient-management-container input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .patient-management-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .patient-management-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .patient-management-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .patient-management-container li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  

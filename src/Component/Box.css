@@ -1,0 +1,16 @@
+.box-container {
+    display: flex;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin between boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

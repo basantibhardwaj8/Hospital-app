@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Sidebar from './Component/Layout/Sidebar'
+import Header from './Component/Layout/Header'
+import Dashboard from './Component/Dashboard'
+import PatientManagement from './Component/PatientManagement'
+import AppointmentManagement from './Component/AppointmentManagement'
+import InventoryManagement from './Component/InventoryManagement'
+import StaffManagement from './Component/StaffManagement'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className='App'>
+        <Header />
+        <Sidebar />
+        <Switch>
+          <Route path='/inventoryManagement'>
+            <InventoryManagement />
+          </Route>
+          <Route path='/appointmentManagement'>
+            <AppointmentManagement />
+          </Route>
+          <Route path='/patientManagement'>
+            <PatientManagement/>
+          </Route>
+          <Route path='/staffManagement'>
+            <StaffManagement />
+          </Route>
+          <Route path='/'>
+            <Dashboard />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  )
 }
 
-export default App;
+export default App
